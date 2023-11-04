@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: monospace;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container{
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url("../img/background/973969.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container-dasboard{
+    display: flex;
+    margin: 0 30px;
+    
+}
+.box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    color: aliceblue;
+    text-align: center;
+}
+.container-player{
+    margin: 0 auto;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 2%;
+    flex: 1;
+}
+.player-top{
+    padding: 20px;
+    overflow: hidden;
+}
+.title-music{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+}
+.image-music{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+}
+.image-music img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.player-body{
+    width: 100%;
+}
+input[type="range"] {
+    width: 100%;
+}
+.player-bottom{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.btn{
+    position: relative;
+    padding: 0 10px;
+}
+.btn.active{
+    display: block ;
+}
+.randomActive{
+    color:rgb(255, 59, 91);
+}
+.pause, .play{
+    display: none;
+}
+.container-playlist{
+    margin: 0 auto;
+    overflow-y: scroll;
+    height: 400px;
+    width: 300px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(224 194 234);
+    border-top-left-radius: 3%;
+}
+.playlist{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    background-color: rgb(228, 222, 214);
+    min-height: 60px;
+    margin:10px;
+    cursor: pointer;
+}
+ .playlist.active{
+    background-color: rgb(120, 231, 87) ;
+}
+
+.playlist-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.playlist-content{
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+audio{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* -------------------- REPONSIVE-------------------- */
+@media screen and (max-width: 768px) { 
+.container-dasboard{
+    flex-direction: column-reverse;
+}
+
+}

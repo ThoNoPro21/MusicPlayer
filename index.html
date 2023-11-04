@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+    <script defer src="./assets/js/app.js"></script>
+    <title>My Music</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <div class="container">
+        <h1 class="title">Zing MP_Thơ</h1>
+        <div class="container-dasboard">
+            <div class="container-playlist box">
+               
+            </div>
+
+            <div class="container-player box" >
+                <div class="player-top">
+                    <div class="title-music">
+                        <span class="name-music">Unknow</span>
+                    </div>
+                    <div class="image-music">
+                        <img id="image-music" src="./assets/img/other/1098154.jpg">
+                    </div>
+                    <audio controls>
+                        <source id="audio" src="./assets/music/KhongBangRinMusicRemix-Na-7198440.mp3">
+                    </audio>
+                    
+                </div>
+
+
+                <div class="player-body">
+                    <input id="range" type="range" value="0" min="0" max="100">
+                </div>
+
+
+                <div class="player-bottom">
+                    <div class="btn repeat">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                
+                    <div class="btn next-left">
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    
+                    <div class="btn pause-play">
+                        <div class="btn pause">
+                            <i class="fa-solid fa-pause"></i>
+                        </div>
+                        <div class="btn play active">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                   
+                    
+                    <div class="btn next-right">
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+
+                    <div class="btn random">
+                        <i class="fa-solid fa-repeat"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
